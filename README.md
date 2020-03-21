@@ -1,0 +1,2 @@
+# inventarios
+Crud usando JpaRepository
