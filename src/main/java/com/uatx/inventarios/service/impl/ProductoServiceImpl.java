@@ -46,4 +46,9 @@ public class ProductoServiceImpl implements ProductoService {
         productoRepository.deleteById(id);
         return "El producto eliminado es " + prodcutoBorrado.getNombre();
     }
+
+    @Override
+    public List<ProductoDTO> findProdsWithImage() {
+        return null;
+    }
 }
