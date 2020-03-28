@@ -14,4 +14,8 @@ public interface ProductoService {
     Producto buscarPorId(Long id);
 
     String borrarPorId(Long id);
+
+    List<ProductoDTO> findProdsWithImage();
+
+
 }
