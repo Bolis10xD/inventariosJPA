@@ -37,19 +37,28 @@ public class ProductosController {
     }
 
 
-    @GetMapping("buscarporid")
+    @GetMapping("/buscarporid")
     @ResponseBody
     public Producto buscarPorId(@RequestParam Long ID) {
 
         return productoService.buscarPorId(ID);
     }
 
-    @GetMapping("borrarporid")
+    @GetMapping("/borrarporid")
     @ResponseBody
     public String borrarPorId(@RequestParam Long ID) {
 
         return productoService.borrarPorId(ID);
     }
+
+    @GetMapping("/page/nuevo-producto")
+    public String nuevoProducto(){
+
+
+
+        return "nuevoProducto";
+    }
+
 
 
 }
